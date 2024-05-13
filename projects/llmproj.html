@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sophia Folino</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <h1 class="title">Large Language Models</h1>
+      <div class="section-container">
+        <div class="project2_pic-container">
+          <img
+            src="../assets/LLM.jpg"
+            alt="Image"
+            class=""
+            style = "border-radius: 25%; padding: 2rem;"
+          />
+        </div>
+        <div class="project_text-container">
+          <p1>
+            The first project I did involving LLMs was to train a large language transformer 
+            to generate humorous captions for cartoons. The model took in a scene description and associated uncanny element
+             (e.g "the horse is on the table, horses usually aren't on tables")  and generated a humorous caption. 
+             <br>
+             This involved the following steps: 
+             <ul style="padding-left: 3rem;">
+              <li style="padding: 0.8rem;">Understand and process data (tokenization, padding, truncation, etc.)</li>
+              <li style="padding: 0.8rem;">Generate learnable latent representations for tokens (embeddings)</li>
+              <li style="padding: 0.8rem;">Implement multi-head attention to capture "context" and feed-forward to enable pointwise transformations</li>
+              <li style="padding: 0.8rem;">Assemble a transformer layer using the implemented multi-head attention and feed-forward modules</li>
+              <li style="padding: 0.8rem;">Attach a language modeling head to the transformer</li>
+              <li style="padding: 0.8rem;">Finetune the Seagull LLM from a pretrained model, to generate humorous captions</li>
+            </ul>
+            
+          </p1>
+        </div>
+      </div>
+
+
+    <section id="contact">
+      <h1 class="title">Contact Me!</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:srf77@cornell.edu">srf77@cornell.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedinimg.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sophia-folino/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; Created by Sophia Folino 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
