@@ -19,33 +19,18 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sophia Folino</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
     <section id="profile">
       <div class="section__pic-container">
         <img 
-          src="./assets/main2.jpeg" 
+          src="./assets/blondephoto.jpeg" 
           alt="Sophia Folino profile picture" 
           class="profile-pic"
           />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi there! I'm</p>
-        <h1 class="title">Sophia Folino</h1>
-        <p class="section__text__p2">Software Developer</p>
+        <h1 class="name">Sophia Folino</h1>
+        <br>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -53,32 +38,35 @@
           >
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Me!
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedinimg.jpg"
+            src="./assets/linkedinimg.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/sophia-folino/'"
           />
           <img
-            src="./assets/githubimg.jpg"
-            alt="My Github profile"
+            src="./assets/email.png"
+            alt="My email"
             class="icon"
-            onclick="location.href='https://github.com/srf77'"
+            onclick="location.href='mailto:srf77@cornell.edu'"
+            style="height: 2.5rem;"
           />
         </div>
+        <br>
+        <p class="section__text__p2">Software Developer</p>
       </div>
     </section>
     <section id="about">
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="about__pic-container">
           <img
-            src="./assets/treephoto.jpg"
+            src="./assets/smilephoto.jpeg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -116,94 +104,128 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='#projects'"
       />
     </section>
+
     <section id="projects">
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/machine_trans.jpg"
-                alt="TransPerfect Machine Translation"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Machine Translation</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/srf77'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/srf77'"
-              >
-                Project Description
-              </button>
-            </div>
+
+      <div class="project-container">
+        <div class="card-containers">
+            <article class = "card__article">
+              <img src="./assets/machine_trans.jpg" alt="image" class="card__img">
+
+              <div class="card__data">
+                <h2 class="card__title">Machine Translation</h2>
+                <span class="card__description">Summer-long internship working at TransPerfect to build 
+                  Machine Translation Solutions
+                </span>
+
+                <a href="./projects/machinetrans.html" class="card__button">Read More</a>
+
+
+              </div>
+            </article>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/nn.jpeg"
-                alt="Misc NLP Projects"
-                class="project-img"
-              />
+
+
+          <div class="card-containers">
+              <article class = "card__article">
+                <img src="./assets/nn.jpeg" alt="image" class="card__img">
+  
+                <div class="card__data">
+                  <h2 class="card__title">Natural Language Processing</h2>
+                  <span class="card__description"> Miscellaneous projects using Natural Language Processing and Computational Linguistics
+                    (e.g. Named entity recognition, semantic role labeling, part-of-speech tagging, etc.)
+                  </span>
+                
+                  <a href="./projects/nlpproj.html" class="card__button">Read More</a>
+  
+  
+                </div>
+              </article>
             </div>
-            <h2 class="experience-sub-title project-title">Misc. NLP Projects</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/srf77'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/srf77'"
-              >
-              Project Description
-              </button>
+
+
+            <div class="card-containers">
+                <article class = "card__article">
+                  <img src="./assets/transformer.jpg" alt="image" class="card__img">
+    
+                  <div class="card__data">
+                    <h2 class="card__title">Large Language Models</h2>
+                    <span class="card__description"> Projects involving the training and use of LLMs
+                    </span>
+                    
+                    <a href="./projects/llmproj.html" class="card__button">Read More</a>
+    
+    
+                  </div>
+                </article>
+              </div>
+
+              <div class="card-containers">
+                <article class = "card__article">
+                  <img src="./assets/rl.jpg" alt="image" class="card__img">
+    
+                  <div class="card__data">
+                    <h2 class="card__title">Reinforcement Learning</h2>
+                    <span class="card__description">Projects involving Reinforcement Learning algorithms
+                    </span>
+                    
+                    <a href="./projects/rlproj.html" class="card__button">Read More</a>
+    
+    
+                  </div>
+                </article>
+              </div>
+    
+    
+              <div class="card-containers">
+                  <article class = "card__article">
+                    <img src="./assets/codenames.jpeg" alt="image" class="card__img">
+      
+                    <div class="card__data">
+                      <h2 class="card__title">AI Codenames</h2>
+                      <span class="card__description">A "Codenames" game using machine learning
+                        to generate clues and learn from incorrect guesses
+                      </span>
+                      
+                      <a href="./projects/codenames.html" class="card__button">Read More</a>
+      
+      
+                    </div>
+                  </article>
+                </div>
+    
+    
+                <div class="card-containers">
+                    <article class = "card__article">
+                      <img src="./assets/redblack.png" alt="image" class="card__img">
+        
+                      <div class="card__data">
+                        <h2 class="card__title">Other Projects</h2>
+                        <span class="card__description">Miscellaneous projects using functional programming, computer system organization, and otherwise
+                        </span>
+                        
+                        <a href="./projects/otherproj.html" class="card__button">Read More</a>
+        
+        
+                      </div>
+                    </article>
+                  </div>
+
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/codenames.jpeg"
-                alt="AI Codenames"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">AI Codenames</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/srf77'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/srf77'"
-              >
-              Project Description
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+              
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='#contact'"
       />
     </section>
+
+
     <section id="contact">
       <h1 class="title">Contact Me!</h1>
       <div class="contact-info-upper-container">
@@ -217,7 +239,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedinimg.jpg"
+            src="./assets/linkedinimg.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -230,12 +252,12 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
+      <p>Copyright &#169; Created by Sophia Folino 2024</p>
     </footer>
     <script src="script.js"></script>
   </body>

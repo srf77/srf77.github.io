@@ -101,3 +101,54 @@
     text-align: justify;
   }
 }
+
+/*===========Project Breakpoints==============*/
+
+/*Small*/
+@media screen and (max-width: 340px){
+  .project-container{
+    margin-inline: 1rem;
+  }
+
+  .card__data{
+    width: 250px;
+    padding: 1rem;
+
+  }
+
+}
+
+/*Medium*/
+@media screen and (max-width: 768px){
+  .project-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr); 
+    margin-inline: 1rem;
+    padding-block: 5rem;
+    row-gap: 5rem;
+  }
+
+}
+
+/*Large*/
+@media screen and (max-width: 1120px){
+  .project-container{
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+  .card-containers{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .card__img{
+    width: 348px;
+  }
+
+  .card__data{
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+
+}
